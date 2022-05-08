@@ -5,3 +5,4 @@ django-allauth~=0.43.0
 django-crispy-forms~=1.10.0
 django_countries~=7.3.2
 django-rest-auth~=0.9.3
+Pillow~=2.2.1
