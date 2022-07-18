@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+import django-heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -152,3 +152,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 #paystack
 PAYSTACK_PUBLIC_KEY = 'pk_test_10354c2a51c26ce12137de7dd2520f146a177fea'
 PAYSTACK_SECRET_KEY = 'sk_test_930834df1933e92b151cfc9f5adb3ebce4bf2491'
+
+django-heroku.settings(locals())
