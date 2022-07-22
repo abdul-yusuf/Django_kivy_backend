@@ -9,9 +9,13 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+<<<<<<< HEAD
 # from django.contrib.auth import get_user_model
 # User = get_user_model()
 
+=======
+import django-heroku
+>>>>>>> 21e8fc8624746b1e681b597a9ee0ef625b9f6098
 import os
 
 import django_heroku
@@ -29,7 +33,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'm+k%yp-9_)_0(hvd^l6i&o+xyi6mp+bhdt@19+$4f6=i0ru=5h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = Fasle
 
 ALLOWED_HOSTS = ['*']
 
@@ -162,4 +166,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 PAYSTACK_PUBLIC_KEY = 'pk_test_10354c2a51c26ce12137de7dd2520f146a177fea'
 PAYSTACK_SECRET_KEY = 'sk_test_930834df1933e92b151cfc9f5adb3ebce4bf2491'
 
+<<<<<<< HEAD
 django_heroku.settings(locals())
+=======
+django-heroku.settings(locals())
+>>>>>>> 21e8fc8624746b1e681b597a9ee0ef625b9f6098
