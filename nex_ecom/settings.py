@@ -14,7 +14,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 # User = get_user_model()
 
 =======
-import django-heroku
 >>>>>>> 21e8fc8624746b1e681b597a9ee0ef625b9f6098
 import os
 
@@ -169,5 +168,4 @@ PAYSTACK_SECRET_KEY = 'sk_test_930834df1933e92b151cfc9f5adb3ebce4bf2491'
 <<<<<<< HEAD
 django_heroku.settings(locals())
 =======
-django-heroku.settings(locals())
 >>>>>>> 21e8fc8624746b1e681b597a9ee0ef625b9f6098
