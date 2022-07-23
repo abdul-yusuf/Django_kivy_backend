@@ -9,8 +9,14 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+# from django.contrib.auth import get_user_model
+# User = get_user_model()
 
 import os
+
+import django_heroku
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -127,6 +133,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = 'core.MyUser'
 
 # Static files (CSS, JavaScript, Images)
 
@@ -148,7 +155,11 @@ LOGIN_REDIRECT_URL = '/'
 # CRISPY FORMS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 #paystack
 PAYSTACK_PUBLIC_KEY = 'pk_test_10354c2a51c26ce12137de7dd2520f146a177fea'
 PAYSTACK_SECRET_KEY = 'sk_test_930834df1933e92b151cfc9f5adb3ebce4bf2491'
+
+django_heroku.settings(locals())
