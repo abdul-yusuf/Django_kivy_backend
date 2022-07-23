@@ -159,7 +159,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #paystack
-PAYSTACK_PUBLIC_KEY = 'pk_test_10354c2a51c26ce12137de7dd2520f146a177fea'
-PAYSTACK_SECRET_KEY = 'sk_test_930834df1933e92b151cfc9f5adb3ebce4bf2491'
+PAYSTACK_PUBLIC_KEY = os.environ.get('PAYSTACK_PUBLIC_KEY')
+PAYSTACK_SECRET_KEY = os.environ.get('PAYSTACK_SECRET_KEY')
 
 django_heroku.settings(locals())
