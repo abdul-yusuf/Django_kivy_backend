@@ -1,1 +1,0 @@
-web: gunicorn nex_ecom.wsgi:application --log-file-
