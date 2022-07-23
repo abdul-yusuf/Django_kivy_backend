@@ -60,7 +60,7 @@ class MyUserManager(BaseUserManager):
             lastname=lastname,
         )
         user.is_admin = True
-        user.is_staff = True
+        # user.is_staff = True
         user.save(using=self._db)
         return user
 
@@ -76,6 +76,7 @@ class MyUser(AbstractBaseUser):
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     is_vendor = models.BooleanField(default=False)
+
 
     objects = MyUserManager()
 
